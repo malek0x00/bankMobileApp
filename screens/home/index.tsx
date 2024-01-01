@@ -28,6 +28,8 @@ function HomeScreen() {
       setIncome(res || "2000");
     });
   }, []);
+  if (!accountInfo.accountBalance || !income)
+    return <View style={styles.container} />;
   return (
     <View style={styles.container}>
       <View style={styles.valuesContainer}>

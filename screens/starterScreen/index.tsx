@@ -14,9 +14,9 @@ function StarterScreen({ navigation }: { navigation: any }) {
         style={styles.image}
         source={require("../../assets/starterbg.png")}
       />
-      <Text style={styles.bankName}>Esm el banka</Text>
+      <Text style={styles.bankName}>Bank</Text>
       <Text style={styles.description}>
-        chwaya 7achou w felle5r “An online banking experience like never before”
+        A Bank App that offers An online banking experience like never before
       </Text>
       <TouchableOpacity
         onPress={() => {

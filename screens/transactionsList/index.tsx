@@ -33,14 +33,14 @@ function TransactionsListPage() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.title}>transactions</Text>
-      {transactions.reverse().map((trn: any) => {
+      {transactions.reverse().map((trn: any, key: number) => {
         return (
           <TransCell
             name={trn.accountNumber}
             date={trn.createdAt}
             ammount={trn.amount}
             isSender={trn.transactionType === "CREDIT"}
-            key={trn.id}
+            key={key}
           />
         );
       })}
