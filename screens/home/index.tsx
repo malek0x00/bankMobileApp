@@ -51,7 +51,7 @@ function HomeScreen() {
           duration={2000}
           progressValueColor="#ecf0f1"
           maxValue={100}
-          title="remaining money"
+          title="Money Spent"
           titleColor="#8F9192"
           inActiveStrokeColor="#8F9192"
           activeStrokeWidth={20}
